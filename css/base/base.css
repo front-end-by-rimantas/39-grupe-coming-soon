@@ -10,3 +10,17 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
 }
+
+:root {
+    /* custom properties / variables */
+    --main-color: #03a9f5;
+    --secondary-color: #ea1e63;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
