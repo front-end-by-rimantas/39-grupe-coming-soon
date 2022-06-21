@@ -12,4 +12,11 @@
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
 
-/* CUSTOM STYLE GOES BELOW THIS COMMENT LINE *
+/* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
+
+section.container.bg-main {
+    padding-bottom: 20px;
+}
+footer.container {
+    padding-top: 0;
+}
