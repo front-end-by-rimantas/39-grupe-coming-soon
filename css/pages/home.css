@@ -81,6 +81,7 @@
 footer.container {
     padding-top: 0;
     text-align: center;
+    line-height: 1.6em;
 }
 .socials {
     display: flex;
@@ -105,14 +106,45 @@ footer.container {
     background-color: #fff;
     color: var(--main-color);
 }
+
+.footer-logo {
+    height: 40px;
+    width: 100%;
+    object-fit: contain;
+    margin: 40px 0;
+}
+
 .credits {
     display: flex;
     gap: 30px;
+    justify-content: center;
     color: #fff8;
 }
 .credits > p {
+    position: relative;
+}
+.credits > p::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(50%, -50%);
+}
+.credits > p:last-child::after {
+    display: none;
 }
 .credits > p > a {
+    color: #fff;
+}
+
+.bottom-text {
+    color: #fff8;
+}
+.bottom-text > a {
     color: #fff;
 }
 /* FOOTER SECTION - end */
