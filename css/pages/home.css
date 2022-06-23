@@ -116,7 +116,7 @@ footer.container {
 
 .credits {
     display: flex;
-    gap: 30px;
+    gap: 0 30px;
     justify-content: center;
     color: #fff8;
 }
@@ -156,6 +156,13 @@ footer.container {
     }
     .main-content > * {
         width: 100%;
+    }
+
+    .credits {
+        flex-direction: column;
+    }
+    .credits > p::after {
+        display: none;
     }
 }
 @media (max-width: 500px) {
