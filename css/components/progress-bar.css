@@ -17,15 +17,10 @@
     width: 100%;
     background-color: #ccc;
     border-radius: 4px;
+    overflow: hidden;
 }
 .progress-bar > .bottom > .bar {
     height: 100%;
     width: 90%;
     background-color: var(--main-color);
-}
-.progress-bar > .bottom > .bar.bar-2 {
-    width: 86%;
-}
-.progress-bar > .bottom > .bar.bar-3 {
-    width: 50%;
 }
