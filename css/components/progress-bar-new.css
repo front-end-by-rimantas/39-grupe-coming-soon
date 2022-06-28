@@ -1,43 +1,38 @@
-.progress-bar {
+.progress-bar-new {
     display: flex;
     width: 100%;
     flex-direction: column;
     gap: 15px;
 }
-.progress-bar > .top {
+.progress-bar-new > .top {
     display: flex;
     justify-content: space-between;
 }
-.progress-bar > .top > .label {
+.progress-bar-new > .top > .label {
 }
-.progress-bar > .top > .value {
+.progress-bar-new > .top > .value {
 }
-.progress-bar > .bottom {
+.progress-bar-new > .bottom {
     height: 8px;
     width: 100%;
     background-color: #ccc;
     border-radius: 4px;
     overflow: hidden;
 }
-.progress-bar > .bottom > .bar {
-    height: 100%;
-    width: 90%;
-    background-color: transparent;
-}
-.progress-bar .bar > .loading {
+.progress-bar-new > .bottom > .bar {
     height: 100%;
     width: 100%;
     background-color: var(--main-color);
-    animation-name: loading;
+    animation-name: loading-new;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes loading {
+@keyframes loading-new {
     0% {
-        width: 0;
+        transform: translateX(-100%);
     }
     100% {
-        width: 100%;
+        transform: translateX(0);
     }
 }
