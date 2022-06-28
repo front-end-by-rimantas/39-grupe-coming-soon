@@ -186,6 +186,9 @@ footer.container {
     .credits > p::after {
         display: none;
     }
+    .socials > .back-to-top {
+        display: none;
+    }
 }
 @media (max-width: 500px) {
     .main-title {
