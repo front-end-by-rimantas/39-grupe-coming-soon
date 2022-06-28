@@ -99,6 +99,7 @@ footer.container {
     flex-wrap: wrap;
     padding: 20px 0;
     border-bottom: 2px solid #fff;
+    position: relative;
 }
 .socials > a {
     display: block;
@@ -114,6 +115,18 @@ footer.container {
 .socials > a:hover {
     background-color: #fff;
     color: var(--main-color);
+}
+
+.socials > .back-to-top {
+    position: absolute;
+    top: -23px;
+    right: -14px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+.socials > .back-to-top:hover {
+    color: var(--secondary-color);
 }
 
 .footer-logo {
